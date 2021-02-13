@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bfdfaf7e26.js"></script>
+    <title>Blog</title>
+</head>
+
+<body>
+    <!-- HEADER AND NAVIGATION BEGINS -->
+    <header class="headerWrapper">
+        <div class="blogFlex">
+            <nav class="upperNavMenu" id="upperNavMenu">
+                <ul>
+                    <li><a href="./index.html" aria-label="Go back to our homepage">Home</a></li>
+                    <li><a href="" aria-label="visit our about page">About</a></li>
+                    <li><a href="./blog.html" aria-label="visit our blog">Blog</a></li>
+                    <li><a href="./contact.html" aria-label="go to our contact page to connect with us">Contact</a></li>
+                </ul>
+                <i class="fas fa-times" id="removeMenu"></i>
+            </nav>
+            <i class="fas fa-bars" id="openMenu"></i>
+        </div>
+        
+        <h1>Blog</h1>
+    </header>
+    <!-- HEADER AND NAVIGATION ENDS -->
+
+    <!-- ASIDE SECTION BEGINS -->
+    <section class="blogMain">
+        <div class="blogContainer wrapper">
+            <aside class="asideFlexContainer">
+                    <img src="./assets/blog-side-image.jpg" alt="View of the boat's deck on the port side around sunset time.">
+    
+                <section class="missionContainer">
+                    <h3>Our Mission</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui culpa ipsum aperiam. Iste at abnecessitatibus, cumque quidem facere!</p>
+    
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>Donec facilisis tortor ut</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Semper sed sapien metus</li>
+                        <li>Scelerisque nec pharetra id</li>
+                    </ul>
+                </section>
+            </aside>
+            <!-- ASIDE SECTION ENDS -->
+
+            <section class="nextDestinationContainer">
+                <img src="./assets/blog-post-image.jpg" alt="Looking at the bow of one of our boats tied to port.">
+            
+                <div class="nextPostContainer">
+                    <h2>Next Destination</h2>
+            
+                    <p>Monday October 30, 2019 by Sulaire</p>
+            
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, consectetur possimus numquam natus
+                    debitis vel. Maiores delectus accusantium quis praesentium voluptates iste, id fuga totam earum. Impedit
+                    repudiandae non maiores, voluptatem, aspernatur reiciendis facilis provident laborum odio deserunt eos
+                    atque?</p>
+            
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi dolores quaerat error, alias deleniti
+                    maxime autem aliquid vitae doloremque inventore voluptatem sequi eaque, praesentium in quas amet, eum
+                    facilis quia perspiciatis ipsa numquam corrupti tempora itaque! Assumenda magnam aspernatur veniam neque?
+                    Quidem dolorem dolor repellendus vel aut officiis magni!</p>
+            
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci blanditiis voluptates perspiciatis
+                    molestias quibusdam. Nemo in voluptatibus consequatur rerum, id animi libero! Corporis, reprehenderit. Quod,
+                    voluptatem voluptate, aut accusamus perferendis delectus labore ratione consequuntur minus quasi voluptates
+                    iusto praesentium sunt natus deserunt repellat in? Dolor dolorum iusto consectetur, dignissimos et
+                    perferendis maiores voluptates debitis commodi mollitia quod neque quae reprehenderit!</p>
+            
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam adipisci voluptatibus, non reprehenderit
+                    rerum officiis doloremque itaque facilis ipsam rem!</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- COMMENTS SECTION BEGINS -->
+    <section class="comments">
+        <div class="commentsTitle">
+            <h2>Comments:</h2>
+        </div>
+        <div class="commentFlexContainer wrapper">
+                <div class="commentFlexItem1">
+                    <img src="./assets/comment-1.jpg" alt="A person looking at the camera">
+
+                    <div class="commentInfoContainer1">
+                        <h4>Tuesday October 9th, 2019 by Ali</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam aut repellat a modi, unde aliquid obcaecati. Id consectetur quas ipsa ea, ratione, asperiores fuga quia blanditiis commodi ipsam praesentium assumenda</p>
+                    </div>
+                </div>
+
+                <div class="commentFlexItem2">
+                    <img src="./assets/comment-2.jpg" alt="A woman smiling with her eyes closed">
+
+                    <div class="commentInfoContainer2">
+                        <h4>Wednesday October 10th, 2019 by Lisa</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo alias nesciunt laboriosam aspernatur ab? Quia architecto reprehenderit expedita mollitia nihil.</p>
+                    </div>
+                </div>
+            
+            
+                <!-- COMMENT FORM SECTION BEGINS -->
+                <fieldset class="commentBlogFlex">
+                    <legend>Please Submit A Comment!</legend>
+                    <form action="submit">
+                        <label for="userName">User name</label>
+                        <input type="text" aria-label="Please input your user name" name="userName" id="userName" class="userName" placeholder="Name">
+
+                        <label for="userEmail">Email address</label>
+                        <input type="email" aria-label="Please enter your email address" name="userEmail" id="userEmail" class="userEmail" placeholder="Email address">
+
+                        <label for="commentBox">Comments</label>
+                        <textarea aria-label="please input your comment" name="commentBox" id="commentBox" class="commentBox" cols="75" rows="10" placeholder="Comment"></textarea>
+
+                        <button class="submitBlog" aria-label="Post a Comment">
+                            <a href="#postComment">Post Comment</a>
+                        </button>
+                    </form>
+                </fieldset>
+                <!-- COMMENT FORM SECTION ENDS -->
+        </div>
+    </section>
+    <!-- COMMENT SECTION ENDS -->
+
+    <!-- FOOTER BEGINS -->
+    <footer>
+        <div class="wrapper">
+            <p>Copyright &#169 2019 HackerYou</p>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+    <!-- JavaScript TAG -->
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

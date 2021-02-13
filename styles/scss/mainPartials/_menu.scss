@@ -1,0 +1,85 @@
+.menu {
+    background-color: $mainLightBlue;
+    @include center;
+    width: 100%;
+    padding-top: 170px;
+    padding-bottom: 110px;
+
+    i {
+        color: black;
+        font-size: 2rem;
+    }
+
+    .menuFlexMain {
+        @include center;
+
+        .menuFlex {
+            @include center;
+            flex-wrap: wrap;
+            width: 88%;
+
+            p {
+                width: 90%;
+                line-height: 2.6rem;
+                margin: 15px 0px;
+            }
+
+            h2 {
+                margin: 0px;
+                color: $mainBlue;
+            }
+
+            .menuItem div {
+                background-color: $mainYellow;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                @include center;
+                margin-right: 20px;
+            }
+
+            .menuItem {
+                flex-wrap: wrap;
+                display: flex;
+                width: calc(50% - 10px);
+                margin: 20px 0px;
+                line-height: 4.9rem;
+            }
+        }
+    }
+
+    @media (max-width: 1160px) {
+        .menuFlexMain {
+            .menuFlex {
+                .menuItem {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // MEDIA QUERIES BEGIN
+    // MEDIA QUERIES BEGIN
+    // MEDIA QUERIES BEGIN
+
+    @media (max-width: 760px) {
+        padding-top: 70px;
+        flex-direction: column;
+
+        .menuFlexMain {
+            .menuFlex {
+                .menuItem {
+                    width: 100%;
+                    justify-content: center;
+                    text-align: center;
+
+                    h2 {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}

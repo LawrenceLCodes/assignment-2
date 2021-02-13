@@ -1,0 +1,618 @@
+// INCLUDED THIS SO THAT BACKGROUND IMAGE WOULD NOT BE CONPRESSED BY NAV OR H1 
+html, body {
+    height: 85%;
+    background-color: $mainLightBlue;
+}
+
+// START IMAGE STYLING TO HELP MAKE BOAT IMAGES MORE RESPONSIVE 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+    line-height: 1.9rem;
+}
+
+h2 {
+    color: $mainBlue;
+}
+
+// BACKGROUND IMAGE FOR BLOG PAGE
+header {
+    background-image: url('../assets/blog-header.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .blogFlex {
+        // TO FLEX NAV AND REMOVE WHITESPACE AT THE TOP OF THE PAGE
+        display: flex;
+    }
+
+    nav {
+        margin-top: 50px;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        width: 30%;
+    }
+
+    li {
+        margin: 0 20px;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+
+        &:hover {
+            border-bottom: 2px solid $mainYellow;
+        }
+    }
+
+    // Hamburger Manu font awesome icon which will be hidden until needed at smaller media query breakpoints.
+    .fas {
+        overflow: hidden;
+        height: 0;
+    }
+
+    h1 {
+        color: #ffffff;
+        font-size: 4.8rem;
+        text-transform: uppercase;
+        position: absolute;
+        left: 65px;
+    }
+}
+
+.blogContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.asideFlexContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+    margin-left: 30px;
+    width: 20%;
+    // position: relative;
+
+    img {
+        background-color: $mainBlue;
+        margin-left: -30px;
+        box-shadow: 30px 10px $mainBlue;
+        // position: absolute;
+        // right: 60px;
+    }
+    
+    p {
+        color: white;
+    }
+}
+
+h3 {
+    color: $mainYellow;
+    margin: 0;
+}
+
+
+li {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.missionContainer {
+    background-color: $mainBlue;
+    padding: 20px 20px;
+
+    h3 {
+        margin-top: 20px;
+    }
+
+    ul {
+        padding-left: 10px;
+        
+        li {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.nextDestinationContainer {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    border: 3px solid $mainYellow;
+
+    img {
+        box-shadow: -12px 12px $mainYellow;
+        margin-top: -300px;
+        z-index: 3;
+    }
+}
+
+.nextPostContainer {
+    padding: 30px 80px 60px 80px;
+
+    h2 {
+        margin-bottom: 0px;
+    }
+
+    p {
+        padding-top: 5px;
+    }
+}
+
+.commentFlexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+
+.commentFlexItem1,
+.commentFlexItem2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 90%;
+
+    img {
+        width: auto;
+        margin-right: 40px;
+    }
+
+    p {
+        margin-top: 0px;
+        padding-right: 70px;
+    }
+
+}
+
+.commentsTitle {
+    h2 {
+        text-align: center;
+    }
+}
+
+.commentFlexItem1 {
+    margin-bottom: 50px;
+    margin-left: 32px;
+
+    img {
+        padding: 0px 0px 30px 0px;
+    }
+}
+
+.commentInfoContainer1,
+.commentInfoContainer2 {
+    width: 55%;
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: $mainBlue;
+    }
+}
+
+
+
+.commentBlogFlex {
+    background-color: $mainLightBlue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 60%;
+    margin-right: 30px;
+    margin-bottom: 70px;
+
+    a {
+        color: $mainYellow;
+    }
+
+
+    .userName,
+    .userEmail,
+    .commentBox {
+        padding: 15px 20px;
+        margin: 20px 18px 20px 22px;
+        background-color: $mainLightBlue;
+        color: $mainBlue;
+    }
+
+    .submitBlog {
+        width: 90%;
+        margin: 15px 10px 20px 20px;
+        border: 0;
+        background-color: $mainBlue;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .asideFlexContainer {
+        margin-top: 10px;
+    }
+    
+    .nextDestinationContainer {
+        img {
+            margin-top: -250px;
+        }
+    }
+
+    .commentBlogFlex {
+        padding-right: 30px;
+    }
+
+    .commentBox {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .asideFlexContainer {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .nextPostContainer,
+    .commentsTitle {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    .nextDestinationContainer,
+    .commentInfoContainer1,
+    .commentInfoContainer2 {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .commentInfoContainer1,
+    .commentInfoContainer2 {
+        h4 {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        margin-right: 30px;
+        padding-left: 70px;
+    }
+
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        img {
+            padding-bottom: 50px;
+        }
+    }
+
+    .commentBlogFlex {
+        .userName,
+        .userEmail {
+            font-size: 1.5rem;
+            padding: 10px 10px 10px 10px;
+            margin-right: 5px;
+        }
+    }
+
+    .commentBox {
+        margin: 20px 18px 15px 0px;
+        font-size: 1.5rem;
+    }
+
+    .submitBlog {
+        margin-right: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 841px) {
+    .asideFlexContainer {
+        width: 27%;
+    }
+    
+    .nextDestinationContainer {
+        img {
+            margin-top: -200px;
+        }
+        
+    }
+    
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        img {
+            padding-bottom: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nextDestinationContainer {
+        img {
+            margin-top: 0px;
+        }
+        
+    }
+    
+    .missionContainer {
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 734px) {
+    .nextPostContainer,
+    .commentsTitle {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {   
+    .blogFlex {
+        nav {
+            font-size: 1rem;
+        }
+    }
+
+    .blogContainer {
+        flex-direction: column;
+    }
+
+    .asideFlexContainer {
+        width: 90%;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -40px;
+        z-index: 4;
+        box-shadow: 10px 10px $mainYellow;
+        
+        img {
+            margin-left: 0;
+            object-fit: cover;
+            box-shadow: 0px 0px;
+        }
+    }
+
+    .missionContainer {
+        padding: 30px 30px;
+    }
+
+    .nextDestinationContainer {
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+        
+        img {
+            margin-top: 0px;
+        }
+    }
+    
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        img {
+            padding-bottom: 120px;
+        }
+    }
+
+    .nextPostContainer {
+        padding: 30px 60px 55px 60px;
+    }
+
+    .comments {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        justify-content: center;
+
+        p {
+            padding-right: 5px;
+        }
+    }
+
+    .commentFlexItem1 {
+        flex-wrap: nowrap;
+    }
+
+    .commentBlogFlex {
+        justify-content: center;
+        width: 90%;
+        padding-right: 0px;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .missionContainer {
+        padding: 15px 10px 15px 15px;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        li {
+            font-size: 1.2rem;
+        }
+    }
+    
+    
+}
+
+@media screen and (max-width: 550px) {
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        padding-left: 10px;
+
+        img {
+            object-fit: scale-down;
+            margin-right: 10px;
+        }
+    }
+
+    .commentInfoContainer1,
+    .commentInfoContainer2 {
+        h4 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 453px) {
+    // To hide nav elements for hamburger menu.
+    nav {
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+        transition: right 2s ease-in;
+        display: none;
+
+    // This is to hide the X or times icon for closing navigation menu until it appears on pop-in menu.    
+        .fas.fa-times {
+            display: none;
+        }
+    }
+
+    // To show the hamburger icon.
+    header {
+        .fas {
+            overflow: visible;
+            font-size: 4.0rem;
+            color: #ffffff;
+            margin: 20px 20px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+    }
+
+    // Stylling for navigation menu when it is opened after click JS event listener is activated. 
+    .fas.fa-bars {
+        // Used so that mouse arrow changes indicating that the user can click on the icon for manu.
+        cursor: pointer;
+    }
+    
+    .nextPostContainer {
+        h2 {
+            font-size: 2.1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .commentsTitle {
+        h2 {
+            font-size: 2.1rem;
+        }
+    }
+    
+    .commentBlogFlex {
+        .userName,
+        .userEmail {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .blogFlex {
+        nav {
+            li {
+               margin: 0 15px; 
+            }
+        }    
+    }
+
+    .asideFlexContainer {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nextPostContainer {
+        padding: 30px 40px 55px 40px;
+    }
+    
+    .commentFlexItem1,
+    .commentFlexItem2 {
+        padding-left: 0px;
+    }
+    
+    .commentFlexItem1 {
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .blogFlex {
+        nav {
+            li {
+               margin: 0 10px; 
+            }
+        }    
+    }
+
+    .asideFlexContainer {
+        margin-top: -200px;
+    }
+    
+    .commentFlexItem1 {
+        img {
+            margin-right: 0px;
+        }
+    }
+
+    .commentInfoContainer1,
+    .commentInfoContainer2 {
+        width: 60%;
+    }
+}

@@ -1,0 +1,17 @@
+
+
+
+@import 'globalPartials/variables';
+@import 'globalPartials/mixins';
+@import 'globalPartials/setup';
+@import 'globalPartials/typography';
+
+@import 'mainPartials/main';
+@import 'mainPartials/menu';
+@import 'mainPartials/info';
+@import 'mainPartials/vacation';
+@import 'mainPartials/gallery';
+@import 'mainPartials/footer';
+
+@import 'blogPartials/blogMain';
+@import 'contactPartials/contact';

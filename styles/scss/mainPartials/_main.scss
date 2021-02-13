@@ -1,0 +1,119 @@
+body {
+    font-size: 1.7rem;
+    overflow-x: hidden;
+
+    .wrapper {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .mainWrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    button {
+        width: 18%;
+        padding: 10px;
+        background-color: $mainYellow;
+    }
+
+    p {
+        line-height: 2.6rem;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+}
+
+main {
+    background-image: url("../assets/home-header.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    .mainFlex {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-between;
+
+        nav {
+            margin-top: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            width: 30%;
+            padding: 0px;
+        }
+
+        li {
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                border-bottom: 2px solid $mainYellow;
+            }
+        }
+
+        h1 {
+            color: $mainYellow;
+            font-size: 6.6rem;
+            width: 40%;
+            text-transform: uppercase;
+        }
+    }
+
+    .mainBoxImage {
+        position: absolute;
+        left: 541px;
+        bottom: -147px;
+        height: 630px;
+        width: 900px;
+    }
+
+    // MEDIA QUERIES BEGIN
+    // MEDIA QUERIES BEGIN
+    // MEDIA QUERIES BEGIN
+
+    @media (max-width: 1000px) {
+        .mainFlex {
+            h1 {
+                width: 80%;
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        height: 65vh;
+
+        .mainFlex {
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            margin-top: 100px;
+
+            h1 {
+                width: 90%;
+                font-size: 5.6rem;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 0px;
+            }
+        }
+    }
+}

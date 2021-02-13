@@ -1,0 +1,154 @@
+.vacation {
+    background-color: $mainLightBlue;
+    @include center;
+    padding: 60px 0px;
+
+    .vacationFlex1 {
+        padding-bottom: 100px;
+        @include center;
+        flex-direction: column;
+        width: 100%;
+
+        h2 {
+            padding: 100px 0px 0px;
+            color: $mainBlue;
+            padding: 100px 0px 0px 0px;
+            margin-bottom: 0px;
+        }
+
+        p {
+            width: 70%;
+        }
+
+        button {
+            width: 15%;
+            padding: 13px;
+            color: $mainBlue;
+            font-size: 2.2rem;
+        }
+    }
+
+    .vacationBanner {
+        width: 100%;
+    }
+
+    // MEDIA QUERIES BEGIN
+    // MEDIA QUERIES BEGIN
+    // MEDIA QUERIES BEGIN
+
+    @media (max-width: 950px) {
+        .vacationFlex1 {
+            button {
+                width: 30%;
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        padding: 10px 0px;
+
+        .vacationFlex1 {
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 50px;
+
+            h2 {
+                padding-top: 0px;
+            }
+
+            button {
+                width: 47%;
+            }
+        }
+    }
+}
+
+.vacationBanner {
+    width: 100%;
+}
+
+.vacation2 {
+    background-color: $mainLightBlue;
+    padding: 80px 0px;
+    width: 100%;
+
+    .vacationFlexAux {
+        display: flex;
+        justify-content: center;
+
+        img {
+            box-shadow: $mainYellow -21px 21px;
+            width: 26%;
+        }
+
+        .vacationFlex2 {
+            width: 48%;
+            margin-left: 60px;
+            margin: 60px 60px;
+
+            h2 {
+                margin: 0px;
+                color: $mainBlue;
+            }
+
+            button {
+                width: 32%;
+                padding: 13px;
+                color: $mainBlue;
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+    @media (max-width: 1300px) {
+        .vacationFlexAux {
+            img {
+                display: none;
+            }
+            // This image didn't reduce in size with the window the way every other image did. This one distorted and I couldn't figure out why
+
+            .vacationFlex2 {
+                @include center;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 940px) {
+        .vacationFlexAux {
+            .vacationFlex2 {
+                width: 78%;
+
+                p {
+                    width: 100%;
+                }
+
+                button {
+                    width: 61%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        .vacationFlexAux {
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 56%;
+            }
+
+            .vacationFlex2 {
+                width: 70%;
+                text-align: center;
+                margin: 60px 0px;
+
+                button {
+                    width: 67%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.gallery {
+    background-color: $mainBlue;
+
+    .galleryFlex {
+        @include center;
+
+        img {
+            width: calc((100% / 3) - 100px);
+            margin: 80px 20px;
+        }
+    }
+
+    @media (max-width: 1060px) {
+        .galleryFlex {
+            img {
+                width: calc((100% / 3) - 50px);
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        .galleryFlex {
+            flex-direction: column;
+            padding: 50px 0px;
+
+            img {
+                width: 75%;
+                margin: 40px 20px;
+            }
+        }
+    }
+}

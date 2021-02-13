@@ -1,0 +1,383 @@
+header.contactWrapper {
+    background-image: url('../assets/contact-header.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+    ul {
+        padding-left: 150px;
+    }
+    
+    h1 {
+        width: 50%;
+        font-size: 6.1rem;
+        padding: 5px 20px 15px 100px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 110px;
+    }
+}
+
+.contactUsFlexContainer {
+    display: flex;
+    z-index: 3;
+    margin-bottom: 140px;
+}
+
+
+// SOCIAL MEDIA AND ADDRESS INFORMATION
+.socialContainerFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.fab {
+    list-style-type: none;
+    font-size: 2rem;
+    color: $mainBlue;
+    padding: 10px 10px 20px 10px;
+    flex: 1 0 20%;
+}
+
+.socialFlexItem1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    // margin-left: 35px;
+
+    .contactEmail {
+        flex-basis: 100%;
+        display: flex;
+        padding-left: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: $mainBlue;
+}
+
+.addressInformation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        padding: 0;
+        font-size: 2rem;
+        margin: 1px 0 5px 0px;
+        text-decoration: none;
+        font-style: normal;
+        color: $mainBlue;
+    }
+}
+
+
+//COMMENT AND EMAIL RESPONSE FORM 
+.commentFormFlex {
+    background-color: $mainBlue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    padding-left: 15px;
+    margin-right: 50px;
+    margin-bottom: 120px;
+    margin-top: -410px;
+    z-index: 3;
+    box-shadow: 15px 15px $mainYellow;
+
+    form {
+        padding-left: 20px;
+    }
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    display: none;
+}
+
+label[for="userName"], 
+label[for="userEmail"],
+label[for="commentBox"] {
+    display: none;
+}    
+
+.userName,
+.userEmail,
+.commentBox {
+    padding: 15px 20px;
+    margin: 20px 18px 20px 22px;
+    background-color: $mainBlue;
+    color: white;
+}
+
+.userName,
+.userEmail {
+    border-color: $mainYellow;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.userName {
+    width: 42%;
+}
+
+.userEmail {
+    width: 42%;
+}
+
+.commentBox {
+    width: 90%;
+    resize: none;
+    border-color: $mainYellow;
+}
+
+.submitComment {
+    width: 90%;
+    margin: 15px 10px 20px 22px;
+    border: 0;
+    background-color: $mainYellow;
+}
+
+
+@media screen and (max-width: 1212px) {
+    header.contactWrapper {
+        h1 {
+            font-size: 5.9rem;
+            padding: 5px 10px 0px 90px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {   
+    .commentFormFlex {
+        margin-bottom: 195px;
+    }
+}
+
+@media screen and (max-width: 1127px) {
+    header.contactWrapper {
+        h1 {
+            font-size: 5.5rem;
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 1046px) {
+    header.contactWrapper {
+        h1 {
+            font-size: 4.8rem;
+            padding: 5px 0px 0px 100px;
+        }
+    }
+    .commentFormFlex {
+        padding-left: 5px;
+
+        .userName {
+            width: 40%;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 971px) {
+    header.contactWrapper {
+        ul {
+            padding-left: 130px;
+        }
+        
+        h1 {
+            font-size: 4.7rem;
+            padding: 5px 0px 0px 80px;
+            width: 60%;
+        }
+    }
+
+    .socialContainerFlex {
+        width: 30%;
+        padding-left: 20px;
+    }
+
+    .addressInformation {
+        width: 100%;
+        padding-left: 10px;
+        
+        a {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            font-size: 1.5rem;
+            padding: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .userName,
+    .userEmail {
+        font-size: 1.5rem;
+    }
+
+    .emailComment {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .commentFormFlex {
+        .userName,
+        .userEmail {
+            width: 90%;
+        }
+    }    
+}
+
+
+
+@media screen and (max-width: 805px) {
+    header.contactWrapper {
+        ul {
+            padding-left: 130px;
+        }
+        
+        h1 {
+            font-size: 4.5rem;
+            padding: 5px 0px 0px 80px;
+            width: 70%;
+        }
+    }
+
+    .socialContainerFlex {
+        width: 35%;
+    }
+    
+    .contactUsFlexContainer {
+        flex-direction: column-reverse;
+    }
+
+    .commentFormFlex {
+        width: 90%;
+        margin-bottom: 60px;
+        margin-right: 0px;
+        margin-left: 35px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    header.contactWrapper {
+        ul {
+        padding-left: 100px;
+        }
+        
+        h1 {
+        font-size: 3.8rem;
+        padding: 5px 0px 0px 50px;
+        width: 70%;
+        }
+    }    
+}
+
+@media screen and (max-width: 565px) {
+    .commentFormFlex {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    header.contactWrapper {
+        ul {
+        padding-left: 70px;
+        }
+        
+        h1 {
+        font-size: 3.8rem;
+            padding: 5px 0px 0px 20px;
+        }
+    }
+    
+    .commentFormFlex {
+        form {
+            padding-right: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 481px) {
+    header.contactWrapper {
+        ul {
+        padding-left: 40px;
+        }
+        
+        h1 {
+        font-size: 3.5rem;
+            padding: 5px 0px 0px 0px;
+        }
+    }
+    
+    .commentFormFlex {
+        margin-left: 20px;
+        margin-top: -230px;
+    }
+    
+    .socialContainerFlex {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    header.contactWrapper {
+        ul {
+        padding-left: 20px;
+        }
+
+        nav {
+            li {
+               margin: 0 15px; 
+            }
+        }   
+        
+        h1 {
+            font-size: 2.9rem;
+        }
+    }
+    
+    .commentFormFlex {
+        margin-left: 10px;
+        margin-top: -210px;
+
+        form {
+            padding-left: 15px;
+        }
+    }
+    
+    .socialContainerFlex {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    header.contactWrapper {
+        ul {
+        padding-left: 15px;
+        }
+    }
+    
+    .socialContainerFlex {
+        width: 50%;
+    }
+}

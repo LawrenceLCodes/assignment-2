@@ -1,0 +1,146 @@
+.info {
+    background-color: $mainBlue;
+    width: 100%;
+
+    .infoFlexMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
+
+        img {
+            width: 80%;
+        }
+
+        .infoFlex11 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 50%;
+            align-self: center;
+        }
+
+        .infoFlex22 {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        p {
+            color: white;
+            margin: 0px;
+            width: 100%;
+            margin: 10px 0px 27px 0px;
+        }
+
+        h2 {
+            color: white;
+            margin: 0px;
+        }
+
+        button {
+            margin: 0px;
+            width: 32%;
+            padding: 13px;
+            font-size: 2.2rem;
+            color: $mainBlue;
+        }
+
+        .image1 {
+            position: relative;
+            top: -85px;
+            left: -79px;
+            box-shadow: #fdd908 21px 21px;
+        }
+
+        .image2 {
+            position: relative;
+            bottom: -81px;
+            right: -113px;
+            box-shadow: #fdd908 -21px 21px;
+        }
+
+        .infoFlex1 {
+            display: flex;
+            flex-direction: column;
+
+            align-items: flex-end;
+            width: 70%;
+        }
+
+        .infoFlex2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 70%;
+            align-self: center;
+        }
+
+        .infoFlex1,
+        .infoFlex2 {
+            padding: 20px 0px;
+        }
+    }
+
+    @media (max-width: 940px) {
+        .infoFlexMain {
+            .infoFlex1,
+            .infoFlex2 {
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                width: 90%;
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        .infoFlexMain {
+            button {
+                width: 60%;
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        .infoFlexMain {
+            flex-direction: column;
+
+            .infoFlex11 {
+                width: 100%;
+                text-align: center;
+
+                button {
+                    width: 62%;
+                    margin: 0 auto;
+                }
+
+                .image1 {
+                    position: static;
+                    width: 75%;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .infoFlex22 {
+                width: 100%;
+                text-align: center;
+
+                button {
+                    width: 62%;
+                    margin: 0 auto;
+                }
+
+                .image2 {
+                    position: static;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
