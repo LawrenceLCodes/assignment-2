@@ -3,13 +3,12 @@
 // The user clicks or taps on the hamburger and then has access to anchor navigation tags for the site. This will serve as the basis for activation. Due to this an Event listener will be required below.
 
 // Create variables
-const mobileNavMenu = document.querySelector("nav");
+const mobileNavMenu = document.getElementById("upperNavMenu");
 const openNavMenu = document.getElementById("openMenu");
 const closeNavMenu = document.getElementById("removeMenu");
 
 // Event listener for toggling open nav menu click.
-openNavMenu.addEventListener('click', function(event){
-    console.log('We clicked on hamburger Menu');
+openNavMenu.addEventListener('click', function(){
     closeNavMenu.style.display = 'block';
     mobileNavMenu.style.display = 'block';
     openNavMenu.style.display = 'none';
@@ -21,6 +20,7 @@ closeNavMenu.addEventListener('click', function (){
     closeNavMenu.style.display = 'none';
     mobileNavMenu.style.display = 'none';
 })
+
 
 
 

@@ -381,3 +381,15 @@ label[for="commentBox"] {
         width: 50%;
     }
 }
+
+@media screen and (max-width: 335px) {
+    header.contactWrapper {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+    
+    .socialContainerFlex {
+        width: 58%;
+    }
+}
