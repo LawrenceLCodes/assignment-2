@@ -359,6 +359,11 @@ main .mainFlex h1 {
   text-transform: uppercase;
 }
 
+main .fas {
+  overflow: hidden;
+  height: 0;
+}
+
 main .mainBoxImage {
   position: absolute;
   left: 541px;
@@ -367,13 +372,13 @@ main .mainBoxImage {
   width: 900px;
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   main .mainFlex h1 {
     width: 80%;
   }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   main {
     height: 65vh;
   }
@@ -394,6 +399,28 @@ main .mainBoxImage {
   }
   main .mainFlex nav {
     margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  main .mainFlex h1 {
+    font-size: 4.2rem;
+  }
+  main .fas {
+    overflow: visible;
+    font-size: 4.0rem;
+    color: #ffffff;
+    margin: 20px 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .mainFlex h1 {
+    font-size: 3.1rem;
   }
 }
 

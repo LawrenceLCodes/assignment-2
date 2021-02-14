@@ -1,3 +1,4 @@
+// SITE WIDE STYLING USED TO UNIFY ACCROSS MULTIPLE PAGES
 body {
     font-size: 1.7rem;
     overflow-x: hidden;
@@ -27,6 +28,7 @@ body {
     }
 }
 
+// TOP OF THE PAGE HERO SECTION
 main {
     background-image: url("../assets/home-header.jpg");
     background-repeat: no-repeat;
@@ -42,6 +44,7 @@ main {
         flex-direction: column;
         justify-content: space-between;
 
+        // TOP NAVIGATION MENU STYLING
         nav {
             margin-top: 50px;
         }
@@ -76,6 +79,11 @@ main {
         }
     }
 
+    .fas {
+        overflow: hidden;
+        height: 0;
+    }
+
     .mainBoxImage {
         position: absolute;
         left: 541px;
@@ -88,7 +96,7 @@ main {
     // MEDIA QUERIES BEGIN
     // MEDIA QUERIES BEGIN
 
-    @media (max-width: 1000px) {
+    @media screen and (max-width: 1000px) {
         .mainFlex {
             h1 {
                 width: 80%;
@@ -96,7 +104,7 @@ main {
         }
     }
 
-    @media (max-width: 550px) {
+    @media screen and (max-width: 550px) {
         height: 65vh;
 
         .mainFlex {
@@ -113,6 +121,33 @@ main {
 
             nav {
                 margin-top: 0px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 453px) {
+        .mainFlex {
+            h1 {
+                font-size: 4.2rem;
+            }
+        }
+        
+        .fas {
+            overflow: visible;
+            font-size: 4.0rem;
+            color: #ffffff;
+            margin: 20px 20px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }   
+    }
+
+    @media screen and (max-width: 350px) {
+        .mainFlex {
+            h1 {
+                font-size: 3.1rem;
             }
         }
     }
