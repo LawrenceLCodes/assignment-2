@@ -36,7 +36,7 @@
     // MEDIA QUERIES BEGIN
     // MEDIA QUERIES BEGIN
 
-    @media (max-width: 950px) {
+    @media screen and (max-width: 950px) {
         .vacationFlex1 {
             button {
                 width: 30%;
@@ -44,7 +44,7 @@
         }
     }
 
-    @media (max-width: 550px) {
+    @media screen and (max-width: 550px) {
         padding: 10px 0px;
 
         .vacationFlex1 {
@@ -100,7 +100,7 @@
         }
     }
 
-    @media (max-width: 1300px) {
+    @media screen and (max-width: 1300px) {
         .vacationFlexAux {
             img {
                 display: none;
@@ -115,7 +115,7 @@
         }
     }
 
-    @media (max-width: 940px) {
+    @media screen and (max-width: 940px) {
         .vacationFlexAux {
             .vacationFlex2 {
                 width: 78%;
@@ -131,7 +131,7 @@
         }
     }
 
-    @media (max-width: 550px) {
+    @media screen and (max-width: 550px) {
         .vacationFlexAux {
             align-items: center;
             flex-direction: column;
@@ -151,4 +151,22 @@
             }
         }
     }
+
+    // This is scale down the vacation flex sections so that they are more responsive for screen around 370px and below. styling is not "taking" so commenting out until I can find a solution...
+    // @media screen and (max-width: 370px) {
+    //     .vacationFlex1 {
+    //         h2 {
+    //             font-size: 2.9rem;
+    //         }
+    //     }
+
+    //     .vacation {
+    //         .vacationFlex1 {
+    //             p {
+    //                 width: 75%;
+    //             }
+    //         }
+    //     }
+        
+    // }
 }

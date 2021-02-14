@@ -511,7 +511,7 @@ main .mainBoxImage {
   line-height: 4.9rem;
 }
 
-@media (max-width: 1160px) {
+@media screen and (max-width: 1160px) {
   .menu .menuFlexMain .menuFlex .menuItem {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -524,7 +524,7 @@ main .mainBoxImage {
   }
 }
 
-@media (max-width: 760px) {
+@media screen and (max-width: 760px) {
   .menu {
     padding-top: 70px;
     -webkit-box-orient: vertical;
@@ -541,6 +541,15 @@ main .mainBoxImage {
   }
   .menu .menuFlexMain .menuFlex .menuItem h2 {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .menu h2 {
+    font-size: 2.9rem;
+  }
+  .menu .menuFlex p {
+    font-size: 1.5rem;
   }
 }
 
@@ -669,7 +678,7 @@ main .mainBoxImage {
   padding: 20px 0px;
 }
 
-@media (max-width: 940px) {
+@media screen and (max-width: 940px) {
   .info .infoFlexMain .infoFlex1,
   .info .infoFlexMain .infoFlex2 {
     -webkit-box-pack: center;
@@ -683,13 +692,13 @@ main .mainBoxImage {
   }
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .info .infoFlexMain button {
     width: 60%;
   }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   .info .infoFlexMain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -722,6 +731,15 @@ main .mainBoxImage {
     width: 100%;
     margin-bottom: 20px;
     margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .info .infoFlexMain h2 {
+    font-size: 2.9rem;
+  }
+  .info .infoFlexMain p {
+    font-size: 1.5rem;
   }
 }
 
@@ -779,13 +797,13 @@ main .mainBoxImage {
   width: 100%;
 }
 
-@media (max-width: 950px) {
+@media screen and (max-width: 950px) {
   .vacation .vacationFlex1 button {
     width: 30%;
   }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   .vacation {
     padding: 10px 0px;
   }
@@ -848,7 +866,7 @@ main .mainBoxImage {
   font-size: 2.2rem;
 }
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .vacation2 .vacationFlexAux img {
     display: none;
   }
@@ -870,7 +888,7 @@ main .mainBoxImage {
   }
 }
 
-@media (max-width: 940px) {
+@media screen and (max-width: 940px) {
   .vacation2 .vacationFlexAux .vacationFlex2 {
     width: 78%;
   }
@@ -882,7 +900,7 @@ main .mainBoxImage {
   }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   .vacation2 .vacationFlexAux {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -926,13 +944,13 @@ main .mainBoxImage {
   margin: 80px 20px;
 }
 
-@media (max-width: 1060px) {
+@media screen and (max-width: 1060px) {
   .gallery .galleryFlex img {
     width: calc((100% / 3) - 50px);
   }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   .gallery .galleryFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
