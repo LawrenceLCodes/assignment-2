@@ -79,6 +79,7 @@ main {
         }
     }
 
+    // This is hide hamburger and X icons for desktop and large tablet sized viewports.
     .fas {
         overflow: hidden;
         height: 0;
@@ -121,6 +122,7 @@ main {
 
             nav {
                 margin-top: 0px;
+                
             }
         }
     }
@@ -132,6 +134,7 @@ main {
             }
         }
         
+        //Added to style hamburger and X icon to be more consistent with rest of design.
         .fas {
             overflow: visible;
             font-size: 4.0rem;
