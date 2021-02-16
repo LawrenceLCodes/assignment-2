@@ -1245,6 +1245,8 @@ li {
   margin: 15px 10px 20px 20px;
   border: 0;
   background-color: #0D457F;
+  color: #FDD908;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1744,6 +1746,9 @@ label[for="commentBox"] {
   margin: 15px 10px 20px 22px;
   border: 0;
   background-color: #FDD908;
+  font-size: 2rem;
+  color: #0D457F;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1212px) {

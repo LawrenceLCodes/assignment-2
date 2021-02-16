@@ -62,7 +62,7 @@
                 <!-- CONTACT FORM BEGINS -->
                 <fieldset class="commentFormFlex">
                     <legend>Please Contact Us!</legend>
-                    <form action="submit">
+                    <form action="submit" method="GET" id="form1" onsubmit="return emptyFormSpaces()">
                         <label for="userName">User name</label>
                         <input type="text" aria-label="Please input your name" name="userName" id="userName"
                         class="userName" placeholder="Name">
@@ -75,7 +75,9 @@
                         placeholder="Message"></textarea>
 
                         <button class="submitComment" aria-label="Submit a message">
-                        <a href="#postComment" class="emailComment">Submit</a>
+                            Submit
+                            <!-- anchor tag was commented out for consistency and to harness JavaScript among all form fields -->
+                            <!-- <a href="#postComment" class="emailComment">Submit</a> -->
                         </button>
                     </form>
                 </fieldset>

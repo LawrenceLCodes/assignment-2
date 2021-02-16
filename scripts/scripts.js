@@ -37,7 +37,7 @@ function emptyFormSpaces() {
 
     if (document.getElementById('userName').value == "") {
         document.getElementById('userName').style.borderColor = 'red';
-        document.getElementById('userName').placeholder = "Enter your username...";
+        document.getElementById('userName').placeholder = "Enter your name...";
         return false;
     }
     // If statement to check for email address entry. If no value is entered underline will be highlighted red to indicate that a value MUST be entered.
@@ -50,8 +50,13 @@ function emptyFormSpaces() {
     // Same as above however this is in regards to the comment box. Same condition and logic applies as per previous if statements.
     if (document.getElementById('commentBox').value == "") {
         document.getElementById('commentBox').style.borderColor = 'red';
-        document.getElementById('commentBox').placeholder = "Please enter your comment or message which you would like to post.";
+        document.getElementById('commentBox').placeholder = "Please enter your comment or message.";
         return false;
+    }
+
+    // This is used to reset the form inputs to theri default value when submit is completed.
+    if (document.getElementById('form1') != "") {
+        document.getElementById('form1').reset();
     }
 
 }
