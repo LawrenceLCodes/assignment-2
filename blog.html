@@ -116,7 +116,7 @@
                 <!-- COMMENT FORM SECTION BEGINS -->
                 <fieldset class="commentBlogFlex">
                     <legend>Please Submit A Comment!</legend>
-                    <form action="submit">
+                    <form action="submit" method="POST" id="form1" onsubmit="return emptyFormSpaces()">
                         <label for="userName">User name</label>
                         <input type="text" aria-label="Please input your user name" name="userName" id="userName" class="userName" placeholder="Name">
 
@@ -126,8 +126,10 @@
                         <label for="commentBox">Comments</label>
                         <textarea aria-label="please input your comment" name="commentBox" id="commentBox" class="commentBox" cols="75" rows="10" placeholder="Comment"></textarea>
 
-                        <button class="submitBlog" aria-label="Post a Comment">
-                            <a href="#postComment">Post Comment</a>
+                        <button type="submit" value="send data" class="submitBlog" id="form1" aria-label="Post a Comment">
+                            Post Comment
+                            <!-- anchor tag needed to be commented out for that form submit could function with JS -->
+                            <!-- <a href="#postComment">Post Comment</a> -->
                         </button>
                     </form>
                 </fieldset>
